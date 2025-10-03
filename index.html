@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Celebrare — Web Task (Internship)</title>
+  <meta name="description" content="Internship task: HTML, CSS, JavaScript (no frameworks). Clean responsive single-page demo with Swiper gallery." />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="#">
+        <img src="assets/logo.svg" alt="Celebrare logo" width="48" height="48">
+        <span class="brand-text">Celebrare</span>
+      </a>
+
+      <nav class="nav" id="siteNav">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#instructions">Submit</a>
+        <a href="https://www.linkedin.com/in/saransh-kachhawa-2b2886249/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Make every celebration remarkable</h1>
+          <p>Responsive, accessible landing page built with plain HTML, CSS and JavaScript. Includes a Swiper gallery — no frameworks used.</p>
+          <p class="cta-row">
+            <a class="btn" href="#gallery">View Gallery</a>
+            <a class="btn ghost" href="#instructions">How to submit</a>
+          </p>
+        </div>
+        <div class="hero-art">
+          <img src="assets/hero.svg" alt="Decorative celebration illustration">
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="container features">
+      <h2>What I built</h2>
+      <div class="feature-grid">
+        <article class="card">
+          <h3>Vanilla HTML/CSS/JS</h3>
+          <p>No frameworks. Clean semantic markup and modern CSS (Flexbox + Grid).</p>
+        </article>
+        <article class="card">
+          <h3>Responsive Design</h3>
+          <p>Mobile-first, accessible, looks good at all screen sizes.</p>
+        </article>
+        <article class="card">
+          <h3>Swiper Gallery</h3>
+          <p>Interactive, touch-friendly image carousel (allowed library).</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="container gallery">
+      <h2>Gallery</h2>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="assets/img1.svg" alt="Gallery image 1"></div>
+          <div class="swiper-slide"><img src="assets/img2.svg" alt="Gallery image 2"></div>
+          <div class="swiper-slide"><img src="assets/img3.svg" alt="Gallery image 3"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev" aria-label="Previous slide"></div>
+        <div class="swiper-button-next" aria-label="Next slide"></div>
+      </div>
+    </section>
+
+    <section id="instructions" class="container instructions">
+      <h2>How to submit (ZIP)</h2>
+      <ol>
+        <li>Test locally: open <code>index.html</code> in your browser, or run <code>python -m http.server</code>.</li>
+        <li>Zip the project (index.html, css/, js/, assets/ and README_submission.txt).</li>
+        <li>Go to the Google Form link and upload the ZIP file before the deadline.</li>
+      </ol>
+
+      <h3>Helpful links</h3>
+      <ul>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/saransh-kachhawa-2b2886249/" target="_blank" rel="noopener">Saransh Kachhawa</a></li>
+      </ul>
+
+      <h3>Notes</h3>
+      <p>The ZIP included in this package has all vectors and images used (in <code>assets/</code>) and is ready for submission.</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Made for the Celebrare internship task • <a href="#instructions">Submission instructions</a></p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

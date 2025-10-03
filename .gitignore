@@ -1,0 +1,5 @@
+# Ignore OS and editor files (not necessary for zip but useful for repo)
+.DS_Store
+Thumbs.db
+node_modules/
+*.log
